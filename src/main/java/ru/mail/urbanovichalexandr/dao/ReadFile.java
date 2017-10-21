@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
 public class ReadFile extends ArrayList<String> {
     public static String readUsingBufferedReader(String fileName) {
 
@@ -29,6 +30,7 @@ public class ReadFile extends ArrayList<String> {
 
         return stringBuilder.toString();
     }
+
 
     public ReadFile(String fileName, String splitter) {
         super(Arrays.asList(readUsingBufferedReader(fileName).split(splitter)));
